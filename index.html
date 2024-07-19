@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel Booking</title>
+<style>
+
+*{
+    max-width: 1300px;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    background-color: #1a2954;
+    
+}
+.search{
+    margin-top: 25px;
+}
+.search i{
+    color: azure;
+}
+
+h5{
+    margin-top: 30px;
+}  
+h5 a{
+    text-decoration: none;
+    color: azure;
+}
+h5 a:hover{
+    background-color: black;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 23px;
+    
+    
+    
+}
+h4{
+    color: azure;
+}
+.sky{
+    color: purple;
+}
+.image{
+    background-image: url('flight.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    
+   
+}
+.care{
+    display: flex;
+    
+    margin-left: 180px;
+    font-size: 22px;
+    padding: 20px;
+   
+    
+   
+}
+h6{
+    background-color:#87CEEB;
+    padding: 20px;
+    color: white;
+    
+   
+}
+h6:hover{
+    background-color:#1a2954; 
+}
+.trip{
+    color: white;
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+.directflight{
+ 
+    margin-left: 260px;
+}
+.trips{
+    margin-left: 40px;
+}
+.journey{
+    margin-left: 60px;
+    margin-top: 20px;
+    color: darkgrey;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#areas{
+   padding: 5px;
+   padding-right: 90px;
+
+}
+.from{
+    margin-left: 10px;
+
+}
+.to{
+    margin-left: 100px;
+}
+.class{
+    margin-left: 100px;
+}
+.department{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    color: darkgrey;
+
+}
+.cabin{
+    margin-left: 70px;
+}
+input[type=text]{
+    height: 20px;
+    width: 100px;
+}
+.adult{
+    margin-left: 70px;
+}
+input[type=number]{
+    height: 20px;
+    width: 70px;
+}
+input[type=submit]{
+    background-color: rgb(152, 13, 36);
+    height: 30px;
+    border-style: solid;
+    margin-top: 33px;
+    margin-left: 30px;
+    padding: 10px;
+    padding-top: 5px;
+}
+    
+   
+
+.flight{ 
+    
+    margin-left: 180px;
+    background-color:#1a2954; 
+    width: 830px;
+    padding: 40px;
+    padding-right: 40px;
+    padding-left: 5px;
+    border-radius: 15px;
+   
+}
+.nearby1{
+    margin-left: 70px;
+    margin-top: 10px;
+    
+}
+.nearby2{
+    margin-left: 140px;
+}
+.airport{
+    color: beige;
+    font-family: sans-serif;
+    font-size: 13px;
+}@media(max-width:768px){
+.care{
+margin-left: 0px;
+
+}
+.care h6{
+    margin-top: 150px;
+   
+}
+.image{
+    height: 90vh;
+   
+}
+.flight{
+    margin-left: 0px;
+    width: 80%;
+   
+}
+.trips{
+ margin-left: 0px;
+}
+.directflight{
+    margin-left: -5px;
+}
+.to{
+    margin-left: 0px;
+}
+.from{
+   margin-left: 0px;
+}
+.class{
+    margin-left: 0px;
+    margin-top: 20px;
+}
+.journey{
+    margin-left: 20px;
+   
+}
+.nearby1{
+    margin-left: 17px;
+}
+.nearby2{
+    margin-left: 17px;
+   
+}
+.cabin{
+    margin-left: 0px;
+    margin-left: 15px;
+}
+.adult{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+}
+
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="navbar">
+<div class="sky">
+<h4><span class="sky">SKY<i class="fa fa-plane" style="font-size:24px"></i></span> Booking</h4>
+</div>
+
+<h5><a href="">HOME</a></h5>
+<h5><a href="">ABOUT</a></h5>
+<h5><a href="">BLOG</a></h5>
+<h5><a href="">PAGES</a></h5>
+<h5><a href="">CONTACTS</a></h5>
+<div class="search">
+<i class="fa fa-search" style="font-size:24px"></i>
+</div>
+</div>
+
+<div class="image">
+
+<div class="care">
+<h6><i class="fa fa-plane"></i> FLIGHTS </h6>
+<h6> <i class="fa fa-bed"></i> HOTELS </h6>
+<h6><i class="fa fa-car"></i> CAR HIRE </h6>
+</div>
+ 
+<div class="flight">
+<div class="trip">
+<input type="radio" class="trips" name="city" id="rounded city">
+<label for="rounded trip">Rounded Trip</label>
+
+<input type="radio" class="trips" name="city" id="one way">
+<label for="rounded trip">One way</label>
+
+<input type="radio" class="trips" name="city" id="multi city">
+<label for="rounded trip">Multi City</label>
+
+<div class="directflight">
+<input type="checkbox"  name="direct flight" id="multi city">
+<label for="rounded trip">Direct Flight Only</label>
+</div>
+</div>
+
+<div class="journey">
+<div class="from">
+<label for="From">From</label><br><br>
+<select id="from">
+<option>New Delhi</option>
+<option>Jaipur</option>
+<option>Rajasthan</option>
+<option>Vellore</option>
+</select>
+</div>
+
+<div class="to">
+<label for="To">To</label><br><br>
+<select id="to">
+<option>New Delhi</option>
+<option>Jaipur</option>
+<option>Rajasthan</option>
+<option>Vellore</option>
+</select>
+</div>
+
+<div class="class">
+<label for="cabin class">Cabin Class</label><br><br>
+<select id="cabinClass">
+<option>Economic</option>
+<option>Premium Economy</option>
+<option>Business</option>
+<option>First class</option>
+</select>
+</div>
+</div>
+<br>
+<div class="airport">
+<input type="checkbox" class="nearby1" name="airport" id="airport">
+<label for="rounded trip">Add Near By Airports</label>
+
+<input type="checkbox"  class="nearby2" name="airport" id="airport">
+<label for="rounded trip">Add Near By Airports</label>
+</div>
+<br>
+
+
+<div class="department">
+<div class="cabin">
+<label for="depature">Depature</label><br><br>
+<input type="text" id="depature">
+</div>
+<div class="cabin">
+<label for="Return">Return</label><br><br>
+<input type="text" id="return">
+</div>
+
+<div class="adult">
+<label for="adult">Adult 16+</label><br><br>
+<input type="number" id="adult">
+</div>
+
+<div class="adult">
+<label for="children">Children</label><br><br>
+<input type="number" id="children">
+</div>
+
+<input type= "submit"   onclick="flightJourney()" id="submit" placeholder="Search Flight" value="Search Flight">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
